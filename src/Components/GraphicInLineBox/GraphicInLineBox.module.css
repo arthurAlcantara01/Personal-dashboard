@@ -1,0 +1,25 @@
+.body{
+    width: 522px;
+    height: 304px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+}
+.main{
+    width: 497px;
+    height: 267.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.title{
+    all: unset;
+    font-size: 24px;
+}
+.boxGraphic{
+    width: 461px;
+    height: 238.25px;
+
+}

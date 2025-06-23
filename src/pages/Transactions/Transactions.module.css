@@ -1,0 +1,29 @@
+.body{
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+.title{
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    margin-left: 19px;
+}
+.button{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    height: 35px;
+    width: 169px;
+    margin-right: 19px;
+}
+
+.titleAndButton{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

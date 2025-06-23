@@ -1,0 +1,46 @@
+.body{
+    width: 463px;
+    height: 259px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    width: 430px;
+    margin: auto;
+}
+.title{
+    font-size: 24px;
+    margin: 0;
+}
+.graphicAux{
+    width: 252px;
+    height: 181px;
+}
+.graphicAuxText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    height: 152px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.marker{
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+}
+.textCategory{
+    all: unset;
+}
+.graphic{
+    width: 178px;
+    height: 178px;
+    padding-bottom: 9px;
+}

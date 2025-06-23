@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 16;
+    margin: auto;
+    height: 82vh;
+    overflow: auto;
+}
+.headTable{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top-left-radius: 14px;
+    border-bottom: 1px solid;
+}
+.date{
+    width: 112px;
+    padding-left: 18px;
+    min-width: 100px;
+}
+.description{
+    flex:1px;
+    padding-left: 18px;
+    min-width: 100px;
+}
+.cca{
+    width: 112px;
+    padding-left: 18px;
+    min-width: 100px;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+.headTable{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid;
+    flex-wrap: wrap;
+}
+.date{
+    width: 112px;
+    padding-left: 18px;
+}
+.description{
+    flex:1px;
+    padding-left: 18px;
+    min-width: 100px;
+}
+.cca{
+    width: 112px;
+    padding-left: 18px;
+    text-align: center;
+
+}

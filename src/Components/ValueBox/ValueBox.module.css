@@ -1,0 +1,36 @@
+.body{
+    width: 325px;
+    height: 128px;
+    display: flex;
+    border-radius: 14px;
+}
+.main{
+    display: flex;
+    margin: 20px;
+    gap: 16px;
+}
+.boxIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.icon{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.boxValue{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titleValue{
+    font-size: 20px;
+    margin: 0;
+    padding: 2px;
+    padding-left: 0;
+}
+.value{
+    font-size: 28px;
+}

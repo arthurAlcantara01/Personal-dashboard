@@ -1,0 +1,18 @@
+.body{
+    width: 216px;
+    padding-left: 18px;
+    height: 100vh;
+}
+.title{
+    padding-top: 18px;
+    font-size: 24px;
+    width: 120px;
+}
+.nav{
+    all: unset;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 12px;
+    
+}
