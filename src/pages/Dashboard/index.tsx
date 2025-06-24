@@ -39,7 +39,7 @@ function Dashboard({theme, language}: props ){
     return(
         <div style={{color: theme.color}} className={styles.body}>
            
-            <div style={{backgroundColor: theme.backgroundBox}}><FaWallet size={40} color={theme.backgroundBox}/></div>
+            <div style={{backgroundColor: theme.backgroundBox} } className={styles.boxUp}></div>
            <h1 className={styles.title}>{language.Pages.Dashboard.title}</h1>
            <main className={styles.main}>
                 <section className={styles.boxValues}>
@@ -47,7 +47,7 @@ function Dashboard({theme, language}: props ){
                     <ValueBox title={language.Pages.Dashboard.income} value={income} theme={theme} colorIcon={"#65BA6C"} colorBoxIcon={theme.backIncome} Icon={BsArrowUpRight}/>
                     <ValueBox title={language.Pages.Dashboard.expense} value={expense} theme={theme} colorIcon={"#FB927A"} colorBoxIcon={theme.backExpense} Icon={BsArrowDownRight}/>
                 </section>
-                <div style={{backgroundColor: theme.backgroundBox}} className={styles.cleanBox}><FaWallet size={30} color={theme.backgroundBox}/></div>
+                <div style={{backgroundColor: theme.backgroundBox, margin: 14}} className={styles.cleanBox}><FaWallet size={30} color={theme.backgroundBox}/></div>
                 <section className={styles.graphicBox}>
                     <GraphicBox language={language} theme={theme}/>
                     <GraphicInLineBox language={language} theme={theme}/>

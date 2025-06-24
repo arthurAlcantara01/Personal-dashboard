@@ -53,3 +53,20 @@ export default tseslint.config({
 })
 ```
 # Personal-dashboard
+
+Habilidades:
+
+🔸 UI/UX com Figma
+
+🔸 React + componentização
+
+🔸 Consumo e manipulação de dados
+
+🔸 Context API / estados globais
+
+🔸 Charts e visualização
+
+🔸 Internacionalização
+
+🔸 Deploy (GitHub/Vercel)
+

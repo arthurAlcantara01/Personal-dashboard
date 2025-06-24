@@ -16,7 +16,7 @@ function SideBar({onPress, screen, theme, language}:props){
     return(
         <div style={{backgroundColor: theme.backgroundBox, color: theme.color}} className={styles.body}>
             <h1 className={styles.title}>{language.Components.SideBar.title}</h1>
-            <div>
+            <div className={styles.header}>
                 <button onClick={()=> onPress("dashboard")} className={styles.nav}>
                     <MdDashboard size={24}/>
                     <p style={{fontWeight: screen == "dashboard" ? "bold" : ""}}>{language.Components.SideBar.dashboard}</p>

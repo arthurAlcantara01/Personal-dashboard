@@ -2,11 +2,13 @@
     width: 216px;
     padding-left: 18px;
     height: 100vh;
+    position: relative;
 }
+
 .title{
     padding-top: 18px;
     font-size: 24px;
-    width: 120px;
+    width: 140px;
 }
 .nav{
     all: unset;
@@ -15,4 +17,21 @@
     align-items: center;
     gap: 12px;
     
+}
+@media (max-width: 768px){
+    .body{
+        width: 98vw;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .header{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .title{
+        padding-top: 0;
+    }
 }

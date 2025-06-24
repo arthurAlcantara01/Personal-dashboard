@@ -6,11 +6,11 @@
     flex-wrap: wrap;
 }
 .date{
-    width: 112px;
+    width: 16%;
     padding-left: 18px;
 }
 .description{
-    flex:1px;
+    flex:1;
     padding-left: 18px;
     min-width: 100px;
 }
@@ -20,3 +20,22 @@
     text-align: center;
 
 }
+@media (max-width: 768px){
+    .headTable{
+        font-size: 12px;
+    }
+}
+@media (max-width: 947px){
+    .headTable{
+        font-size: 14px;
+    }
+     .date{
+        width: 82px;
+        padding-left: 4px;
+    }
+    .cca{
+        width: 82px;
+        padding-left: 4px;
+    }
+}
+@media (max-width: 550px){}

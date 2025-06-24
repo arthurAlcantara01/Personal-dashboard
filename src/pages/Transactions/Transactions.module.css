@@ -27,3 +27,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.boxUp{
+        height: 40px;
+    }
+@media (max-width: 768px){
+    .boxUp{
+        height: 0;
+    }
+}

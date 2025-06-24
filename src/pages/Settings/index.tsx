@@ -1,4 +1,4 @@
-import { FaWallet } from "react-icons/fa"
+
 import GeneralPref from "../../Components/GeneralPref"
 import type { language, themet } from "../../constants/types"
 import styles from "./Settings.module.css"
@@ -16,7 +16,7 @@ function Settings({onPress, typeTheme, theme, language, onPressLang, typeLang}: 
 
     return(
          <div  className={styles.body}>
-            <div style={{backgroundColor: theme.backgroundBox}}><FaWallet size={40} color={theme.backgroundBox}/></div>
+            <div style={{backgroundColor: theme.backgroundBox} } className={styles.boxUp}></div>
            <h1 style={{color: theme.color}} className={styles.title}>{language.Pages.Settings.title}</h1>
            <GeneralPref language={language} typeLang={typeLang} onPressLang={onPressLang} theme={theme} typeTheme={typeTheme} onPress={onPress}/>
         </div>

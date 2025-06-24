@@ -1,7 +1,6 @@
 import styles from "./TableDashBoard.module.css"
 import LineTable from "../LineTable"
 import type { language, line, themet } from "../../constants/types"
-import { FaTrash } from "react-icons/fa"
 
 type props = {
     theme: themet
@@ -19,7 +18,6 @@ function TableDashBoard({theme, language, data}: props){
                 <p className={styles.cca}>{language.Components.TableDashBoard.category}</p>
                 <p className={styles.cca}>{language.Components.TableDashBoard.type}</p>
                 <p className={styles.cca}>{language.Components.TableDashBoard.amount}</p>
-                <FaTrash size={18} style={{padding: 18}} color={theme.backgroundBox}/>
             </div>
             {
                 data.map((item)=>

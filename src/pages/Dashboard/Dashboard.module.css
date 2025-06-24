@@ -1,20 +1,20 @@
 .body{
     flex: 1;
     overflow: auto;
-    height: 100vh;
+    height: 99vh;
+    position: relative;
 }
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 560px;
     gap: 12px;
 }
 .title{
     font-weight: 500;
     font-size: 24px;
-    margin-top: 29px;
+    margin-top: 69px;
     margin-bottom: 29px;
     margin-left: 19px;
 }
@@ -36,4 +36,30 @@
 .cleanBox{
     width: 80%;
     height: 40px;
+}
+.boxUp{
+        height: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+@media (max-width: 900px){
+    .boxValues{
+        width: 100%;
+    }
+    .graphicBox{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .body{
+        height: 89vh;
+    }
+    .boxUp{
+        height: 0;  
+    }
+    .title{
+        margin-top: 29px;
+    }
 }
