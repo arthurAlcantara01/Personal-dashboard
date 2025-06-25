@@ -22,3 +22,14 @@
     border: 2px solid #3067B9;
     border-radius: 100%;
 }
+@media (max-width: 768px){
+    .chooseButton{
+        height: 50px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .radioButton{
+        margin-left: 8px;
+    }
+}

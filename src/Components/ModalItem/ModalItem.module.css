@@ -23,3 +23,12 @@
     border: none;
     padding: 12x;
 }
+@media (max-width: 768px){
+    .inputBox{
+        width: 100%;
+        height: 50px;
+    }
+    .title{
+        font-size: 16px;
+    }
+}

@@ -9,12 +9,11 @@
 }
 .main{
     width: 578px;
-    height: 682px;
     margin: auto;
 }
 .secondMain{
     display: flex;
-    width: 500px;
+    width: 100%;
     flex-direction: column;
     margin: auto;
 }
@@ -28,7 +27,7 @@
 }
 .sectionTitle{
     display: flex;
-    width: 500px;
+    width: 100%;
     justify-content: space-between;
     margin: auto;
 }
@@ -43,7 +42,18 @@
 .footer{
     display: flex;
     justify-content: end;
-    width: 500px;
+    width: 100%;
     margin: auto;
     margin-top: 24px;
+}
+
+@media (max-width: 768px){
+    .main{
+        width: 80%;
+    }
+}
+@media (max-width: 430px){
+    .title{
+        font-size: 22px;
+    }
 }
