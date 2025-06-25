@@ -44,3 +44,38 @@
     height: 178px;
     padding-bottom: 9px;
 }
+@media (max-width: 550px){
+    .body{
+        width: 80%;
+        height: 200px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .main{
+        width: 90%;
+        gap: 12px;
+    }
+    .graphicAux{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .graphicAuxText{
+        font-size: 12px;
+        height: 120px;
+    }
+    .graphic{
+        width: 140px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 340px){
+            .graphic{
+        width: 120px;
+        display: flex;
+        align-items: center;
+    }
+}

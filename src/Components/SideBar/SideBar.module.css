@@ -3,6 +3,7 @@
     padding-left: 18px;
     height: 100vh;
     position: relative;
+    margin: auto;
 }
 
 .title{
@@ -18,9 +19,11 @@
     gap: 12px;
     
 }
+
 @media (max-width: 768px){
     .body{
-        width: 98vw;
+        padding-left: 0;
+        width: 100vw;
         display: flex;
         align-items: center;
         height: 100px;
@@ -32,6 +35,24 @@
         justify-content: space-evenly;
     }
     .title{
-        padding-top: 0;
+        padding-left: 6px;
+    }
+}
+@media (max-width: 550px){
+   .body{
+    flex-direction: column;
+    height: 120px;
+    width: 100vw;
+   }
+     .title{
+       width: 100%;
+       text-align: center;
+    }
+    .nav{
+        gap: 4px;
+        font-size: 12px;
+    }
+    .header{
+        
     }
 }
