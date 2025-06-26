@@ -34,19 +34,15 @@
 .value{
     font-size: 28px;
 }
-@media (max-width: 480px){
+@media (max-width: 550px){
     .body{
-        width: 250px;
+        width: 85%;
     }
     .value{
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .titleValue{
+        font-size: 16px;
     }
 }
-@media (max-width: 370px){
-    .body{
-        width: 230px;
-    }
-     .titleValue{
-        font-size: 18px;
-    }
-}
+

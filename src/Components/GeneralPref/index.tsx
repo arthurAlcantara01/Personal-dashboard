@@ -17,7 +17,7 @@ function GeneralPref({onPress, typeTheme, theme, onPressLang, language, typeLang
             <main className={styles.main}>
                 <h1 className={styles.title}>{language.Components.GeneralPref.title}</h1>
                 <div className={styles.flex}>
-                    <p style={{margin: 0}}>{language.Components.GeneralPref.setTheme}</p>
+                    <p style={{margin: 0}} className={styles.theme}>{language.Components.GeneralPref.setTheme}</p>
                     {typeTheme == "dark" ? 
                     <button onClick={()=>onPress("light")} style={{backgroundColor: "#4177C8"}} className={styles.click}>
                         <div style={{right: 0}} className={styles.movClick}></div>
@@ -31,19 +31,19 @@ function GeneralPref({onPress, typeTheme, theme, onPressLang, language, typeLang
                     <p>{language.Components.GeneralPref.setLanguage}</p>
                     <div className={styles.boxSelect} style={{display: "flex", alignItems: "center", gap: 6}}>
                         {typeLang == "English" ? 
-                        <select onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox}} className={styles.select} name="category" id="category">
+                        <select value={typeLang} onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox}} className={styles.select} name="category" id="category">
                             <option value="English">English</option>
                             <option value="Portuguese">Portuguese</option>
                             <option value="Spanish">Spanish</option>
                         </select>
                         : typeLang == "Portuguese" ? 
-                        <select onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox, paddingRight: 30}} className={styles.select} name="category" id="category">
+                        <select value={typeLang} onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox, paddingRight: 30}} className={styles.select} name="category" id="category">
                             <option value="English">Inglês</option>
                             <option value="Portuguese">Português</option>
                             <option value="Spanish">Espanhol</option>
                         </select>
                         :
-                        <select onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox, paddingRight: 30}} className={styles.select} name="category" id="category">
+                        <select value={typeLang} onChange={(e)=> onPressLang(e.target.value)} style={{backgroundColor: theme.backgroundBox, paddingRight: 30}} className={styles.select} name="category" id="category">
                             <option value="English">Inglés</option>
                             <option value="Portuguese">Portugués</option>
                             <option value="Spanish">Espanõl</option>

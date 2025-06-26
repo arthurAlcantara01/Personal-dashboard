@@ -28,11 +28,7 @@
     padding-left: 18px;
     text-align: center;
 }
-@media (max-width: 768px){
-    .headTable{
-        font-size: 12px;
-    }
-}
+
 @media (max-width: 947px){
     .headTable{
         font-size: 14px;
@@ -44,5 +40,27 @@
     .cca{
         width: 82px;
         padding-left: 4px;
+    }
+}
+@media (max-width: 768px){
+    .headTable{
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px){
+    .headTable{
+        font-size: 10px;
+    }
+    .date{
+        width: 62px;
+        padding-left: 4px;
+    }
+    .cca{
+        width: 62px;
+        padding-left: 4px;
+
+    }
+    .description{
+        min-width: 80px;
     }
 }

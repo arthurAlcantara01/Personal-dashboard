@@ -33,6 +33,9 @@
         height: 230px;
         margin-bottom: 50px;
     }
+    .title{
+        font-size: 18px;
+    }
     .boxGraphic{
         width: 350px;
         height: 180px;

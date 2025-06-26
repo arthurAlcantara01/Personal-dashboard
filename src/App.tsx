@@ -36,7 +36,7 @@ function App(){
     return(
         <div style={{backgroundColor: theme.backgroundGeneral}} className={styles.body}>
             <SideBar language={language} theme={theme} onPress={setScreen} screen={screen}/>
-           {showModal && <Modal theme={theme} onPress={setShowModal}/>}
+           {showModal && <Modal language={language} theme={theme} onPress={setShowModal}/>}
             <main className={styles.main}>
                 <div className={styles.containerPages}>
                     {screen === "dashboard" && <Dashboard language={language} theme={theme}/>}
