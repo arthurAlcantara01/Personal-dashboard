@@ -14,7 +14,7 @@ export const DarkTheme = {
 
 export const LightTheme = {
     backgroundBox: "#ffffff",
-    backgroundGeneral: "#F1F1F1",
+    backgroundGeneral: "#F4F5F9",
     color: "#000000",
     backTotal: "#EFF2F8",
     backIncome: "#EDF9F2",

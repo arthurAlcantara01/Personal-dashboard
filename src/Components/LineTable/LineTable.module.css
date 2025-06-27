@@ -6,6 +6,7 @@
     flex-wrap: wrap;
 }
 .date{
+    max-width: 150px;
     width: 16%;
     padding-left: 18px;
 }
@@ -54,5 +55,22 @@
     }
     .description{
         min-width: 80px;
+    }
+}
+@media (max-width: 420px){
+    .headTable{
+        font-size: 9px;
+    }
+    .date{
+        width: 50px;
+        padding-left: 4px;
+    }
+    .cca{
+        width: 50px;
+        padding-left: 4px;
+
+    }
+    .description{
+        min-width: 60px;
     }
 }
