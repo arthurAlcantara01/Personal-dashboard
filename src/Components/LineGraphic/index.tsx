@@ -1,8 +1,8 @@
 import {Chart as ChartJS,LineElement,PointElement,LinearScale,CategoryScale,Tooltip,Legend} from "chart.js";
 import { Line } from "react-chartjs-2";
 import type { language, line } from "../../constants/types";
-import { dataContext } from "../../context/dataContext";
 import { useEffect, useState } from "react";
+import { useDataContext } from "../../context/dataContext";
 
 ChartJS.register(LineElement,PointElement,LinearScale,CategoryScale,Tooltip,Legend);
 
@@ -11,7 +11,7 @@ type props = {
 } 
 
 function LineGraphic({language}: props){
-    const data = dataContext().getData()
+    const {data} = useDataContext()
     const [amountMonths, setAmountMonths] = useState<number[]>()
     const [months, setMonths] = useState<string[]>()
 

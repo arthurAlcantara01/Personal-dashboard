@@ -17,14 +17,14 @@ function GeneralPref({onPress, typeTheme, theme, onPressLang, language, typeLang
             <main className={styles.main}>
                 <h1 className={styles.title}>{language.Components.GeneralPref.title}</h1>
                 <div className={styles.flex}>
-                    <p style={{margin: 0}} className={styles.theme}>{language.Components.GeneralPref.setTheme}</p>
+                    <p style={{margin: 0}} className={styles.setTheme}>{language.Components.GeneralPref.setTheme}</p>
                     {typeTheme == "dark" ? 
                     <button onClick={()=>onPress("light")} style={{backgroundColor: "#4177C8"}} className={styles.click}>
-                        <div style={{right: 0}} className={styles.movClick}></div>
+                        <div style={{right: 0}} className={styles.toggleSwitch}></div>
                     </button>
                     :
                      <button onClick={()=>onPress("dark")} style={{backgroundColor: "#9C9B9B"}} className={styles.click}>
-                        <div style={{left: 0}} className={styles.movClick}></div>
+                        <div style={{left: 0}} className={styles.toggleSwitch}></div>
                     </button>}
                 </div>
                 <div className={styles.flex}>

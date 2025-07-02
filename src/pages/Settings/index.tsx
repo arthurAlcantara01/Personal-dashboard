@@ -1,5 +1,5 @@
 
-import GeneralPref from "../../Components/GeneralPref"
+import GeneralPref from "../../components/GeneralPref"
 import type { language, themet } from "../../constants/types"
 import styles from "./Settings.module.css"
 

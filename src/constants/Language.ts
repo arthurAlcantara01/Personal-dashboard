@@ -72,7 +72,7 @@ export const English = {
             transaction: "Transaction",
             settings: "Settings"
         },
-        TableDashBoard:{
+        TableTransactions:{
             date: "Date",
             description: "Description",
             category: "Category",
@@ -156,7 +156,7 @@ export const Portugues = {
       transaction: "Transações",
       settings: "Configurações"
     },
-    TableDashBoard: {
+    TableTransactions: {
       date: "Data",
       description: "Descrição",
       category: "Categoria",
@@ -239,7 +239,7 @@ export const Spanish = {
       transaction: "Transacciones",
       settings: "Configuraciones"
     },
-    TableDashBoard: {
+    TableTransactions: {
       date: "Fecha",
       description: "Descripción",
       category: "Categoría",

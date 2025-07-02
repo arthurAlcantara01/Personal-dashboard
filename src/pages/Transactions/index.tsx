@@ -1,6 +1,6 @@
-import TableDashBoard from "../../Components/TableDashBoard"
+import TableTransactions from "../../components/TableTransactions"
 import type { language, themet } from "../../constants/types"
-import { dataContext } from "../../context/dataContext"
+import { useDataContext } from "../../context/dataContext"
 import styles from "./Transactions.module.css"
 import { FaPlus } from "react-icons/fa"
 
@@ -12,8 +12,6 @@ type props = {
 
 function Transactions({theme, onPress, language}: props){
 
-    const data = dataContext().getData()
-
     return(
         <div style={{color: theme.color}} className={styles.body}>
             <div style={{backgroundColor: theme.backgroundBox} } className={styles.boxUp}></div>
@@ -24,7 +22,7 @@ function Transactions({theme, onPress, language}: props){
                     <p >{language.Pages.Translation.button}</p>
                 </button>
            </section>
-           <TableDashBoard data={data} language={language} theme={theme}/>
+           <TableTransactions language={language} theme={theme}/>
         </div>
     )
 }

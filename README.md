@@ -1,72 +1,47 @@
-# React + TypeScript + Vite
+# Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Dashboard
 
-Currently, two official plugins are available:
+A personal finance dashboard to manage expenses and income in a simple and accessible way, for both **desktop** and **mobile** devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React + Vite**
+- **TypeScript**
+- **Chart.js**
+- **CSS Modules**
+- **React Icons**
+- **Vercel** (Deployment)
+- **Firebase (Firestore)**
+- **GitHub** (Version control)
+- **Figma** (Interface design)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Register new transactions
+- Store data in Firebase
+- Doughnut and Line charts for visual insights
+- Dark / Light theme toggle
+- Language switcher (PT-BR | EN | ES)
+- Fully responsive layout
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# Personal-dashboard
+---
 
-Habilidades:
+## How to Run Locally
 
-🔸 UI/UX com Figma
+```bash
+# Clone the repository
+git clone https://github.com/arthurAlcantara01/Personal-dashboard.git
 
-🔸 React + componentização
+# Navigate into the project folder
+cd Personal-dashboard
 
-🔸 Consumo e manipulação de dados
+# Install dependencies
+npm install
 
-🔸 Context API / estados globais
-
-🔸 Charts e visualização
-
-🔸 Internacionalização
-
-🔸 Deploy (GitHub/Vercel)
-
+# Run the project
+npm run dev

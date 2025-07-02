@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import type { language, themet } from "../../constants/types"
 import DoughnutGraphic from "../DoughnutGraphic"
-import styles from "./GraphicBox.module.css"
-import { dataContext } from "../../context/dataContext"
+import styles from "./GraphicDoughnutBox.module.css"
+import { useDataContext } from "../../context/dataContext"
 
 type props = {
     theme: themet    
@@ -13,8 +13,8 @@ type props = {
 
 function GraphicBox({theme, language}: props){    
 
-    const provider = dataContext()
-    const data = provider.getData().filter((item)=> item.type == "expense")
+    const {data} = useDataContext()
+    const dt = data.filter((item)=> item.type == "expense")
     const [expenses, setExpenses] = useState({
             alimentation: 0,
             fixedBills: 0,
@@ -28,7 +28,7 @@ function GraphicBox({theme, language}: props){
             fixedBills: 0,
             others: 0
         }
-        for (const item of data) {
+        for (const item of dt) {
             if(item.category.toLowerCase() == "alimentation")
                 expenseFilter.alimentation += item.amount
             else if(item.category.toLowerCase() == "fixed bills")
@@ -37,7 +37,7 @@ function GraphicBox({theme, language}: props){
                 expenseFilter.others += item.amount
         }
         setExpenses(expenseFilter)
-    }, [provider.getData()])
+    }, [data])
 
     return(
         <div style={{color: theme.color, backgroundColor: theme.backgroundBox}} className={styles.body}>

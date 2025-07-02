@@ -20,7 +20,7 @@ function ValueBox({title, value, Icon, colorIcon,colorBoxIcon, theme}: props){
                 </div>
                 <div className={styles.boxValue}>
                     <p className={styles.titleValue}>{title}</p>
-                    <p className={styles.value}>R$ <span style={{fontWeight: "bold"}}>{value}</span></p>
+                    <p className={styles.value}>R$ {value.toFixed(2)}</p>
                 </div>
             </div>
         </div>

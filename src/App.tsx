@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import styles from "./App.module.css"
-import SideBar from "./Components/SideBar"
+import SideBar from "./components/SideBar"
 import Dashboard from "./pages/Dashboard"
 import Transactions from "./pages/Transactions"
 import Settings from "./pages/Settings"
 import { DarkTheme, LightTheme } from "./constants/ThemeColors"
-import Modal from "./Components/Modal"
+import Modal from "./components/Modal"
 import { English, Portugues, Spanish } from "./constants/Language"
 
 function App(){

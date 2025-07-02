@@ -1,4 +1,4 @@
-.body{
+.backBoxModal{
     position: absolute;
     top: 0;
     width: 100%;
@@ -7,11 +7,11 @@
     align-items: center;
     z-index: 999;
 }
-.main{
+.modal{
     width: 578px;
     margin: auto;
 }
-.secondMain{
+.main{
     display: flex;
     width: 100%;
     flex-direction: column;

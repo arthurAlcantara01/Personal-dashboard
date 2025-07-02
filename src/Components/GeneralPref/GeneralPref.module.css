@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
 }
-.movClick{
+.toggleSwitch{
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -57,7 +57,7 @@
     .title{
         font-size: 16px
     }
-    .theme{
+    .setTheme{
         font-size: 14px;
     }
     .flex{
@@ -67,7 +67,7 @@
         width: 34px;
         height: 17px;
     }
-    .movClick{
+    .toggleSwitch{
         width: 17px;
         height: 17px;
         

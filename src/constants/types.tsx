@@ -12,7 +12,7 @@ export type themet = {
 
 }
 export type line = {
-    id: number,
+    id: string,
     date: string,
     description: string,
     category: string,
@@ -93,7 +93,7 @@ export type language = {
       transaction: string;
       settings: string;
     };
-    TableDashBoard: {
+    TableTransactions: {
       date: string;
       description: string;
       category: string;

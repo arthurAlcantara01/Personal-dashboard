@@ -5,7 +5,7 @@ import ModalTypeTransaction from "../ModalTypeTransaction"
 import { useState } from "react"
 import ModalItem from "../ModalItem"
 import ModalItemChoose from "../ModalItemChoose"
-import { dataContext } from "../../context/dataContext"
+import { useDataContext } from "../../context/dataContext"
 
 type props = {
     theme: themet
@@ -19,7 +19,7 @@ function Modal({theme, onPress, language}: props){
     const [category, setcategory] = useState("")
     const [description, setDescription] = useState("")
 
-    const provider = dataContext()
+    const {data, addTransaction} = useDataContext()
 
     function saveTransaction(){
         if(amount == "" || category == "" || description == ""){
@@ -30,29 +30,30 @@ function Modal({theme, onPress, language}: props){
             alert("Digite um valor númerico")
             return
         }
-        const dt = new Date
-        provider.addTransaction(
+        const dt = new Date()
+        
+        addTransaction(
             {
-                id: provider.getData().length + 1,
+                id: data.length + 1 + "",
                 date: dt.toLocaleDateString(),
                 description: description,
                 category: category,
                 type: type.toLowerCase(),
-                amount: type == "Income" ?  Number.parseInt(amount) :  Number.parseInt(amount) * -1,
+                amount: type == "Income" ?  Number.parseFloat(amount) :  Number.parseFloat(amount) * -1,
             }
         )
-        onPress(false)
+       onPress(false)
     }
 
     return(
-        <div style={{color: theme.color, backgroundColor: theme.backBoxModal}} className={styles.body}>
-            <main style={{backgroundColor: theme.backModal}} className={styles.main}>
+        <div style={{color: theme.color, backgroundColor: theme.backBoxModal}} className={styles.backBoxModal}>
+            <main style={{backgroundColor: theme.backModal}} className={styles.modal}>
                 <div className={styles.content}>
                     <section className={styles.sectionTitle}>
                         <h1 className={styles.title}>{language.Components.Modal.title}</h1>
                         <FiX onClick={()=> onPress(false)} size={24}/>
                     </section>
-                    <main className={styles.secondMain}>
+                    <main className={styles.main}>
                         <ModalTypeTransaction language={language} onPress={setType} type={type} theme={theme}/>
                         <ModalItem theme={theme} value={amount} onPress={setAmount} title={language.Components.Modal.amount} />
                         <ModalItemChoose type={type} theme={theme} value={category} onPress={setcategory} title={language.Components.Modal.category} />
