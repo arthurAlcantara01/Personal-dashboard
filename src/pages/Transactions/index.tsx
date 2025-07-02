@@ -1,6 +1,5 @@
 import TableTransactions from "../../components/TableTransactions"
 import type { language, themet } from "../../constants/types"
-import { useDataContext } from "../../context/dataContext"
 import styles from "./Transactions.module.css"
 import { FaPlus } from "react-icons/fa"
 
