@@ -1,0 +1,64 @@
+.body{
+    width: 512px;
+    height: 304px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;;
+    
+}
+.main{
+    width: 497px;
+    height: 267.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.title{
+    all: unset;
+    font-size: 24px;
+}
+.boxGraphic{
+    width: 461px;
+    height: 238.25px;
+
+}
+@media (max-width: 550px){
+    .body{
+        width: 85%;
+        height: 230px;
+    }
+    .main{
+        width: 100%;
+        height: 230px;
+        margin-bottom: 50px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .boxGraphic{
+        width: 350px;
+        height: 180px;
+    }
+
+}
+@media (max-width: 460px){
+     .boxGraphic{
+        width: 280px;
+    }
+    .title{
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 340px){
+    .title{
+        font-size: 18px;
+    }
+    .main{
+        gap: 15px;
+    }
+    .boxGraphic{
+        width: 240px;
+    }    
+}
