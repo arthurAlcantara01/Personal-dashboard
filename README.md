@@ -37,9 +37,6 @@ A personal finance dashboard to manage expenses and income in a simple and acces
 # Clone the repository
 git clone https://github.com/arthurAlcantara01/Personal-dashboard.git
 
-# Navigate into the project folder
-cd Personal-dashboard
-
 # Install dependencies
 npm install
 
