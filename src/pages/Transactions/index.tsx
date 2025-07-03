@@ -18,7 +18,7 @@ function Transactions({theme, onPress, language}: props){
                 <h1 className={styles.title}>{language.Pages.Translation.title}</h1>
                 <button style={{backgroundColor: theme.backButton}} onClick={()=> onPress(true)} className={styles.button}>
                     <FaPlus/>
-                    <p >{language.Pages.Translation.button}</p>
+                    <p style={{fontSize: 14}}>{language.Pages.Translation.button}</p>
                 </button>
            </section>
            <TableTransactions language={language} theme={theme}/>

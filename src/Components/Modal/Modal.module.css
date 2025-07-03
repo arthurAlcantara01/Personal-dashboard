@@ -48,11 +48,15 @@
 }
 
 @media (max-width: 768px){
-    .main{
-        width: 80%;
-    }
+  .modal{
+    max-width: 500px;
+    width: 80%;
+}
 }
 @media (max-width: 430px){
+     .modal{
+    width: 90%;
+}
     .title{
         font-size: 22px;
     }

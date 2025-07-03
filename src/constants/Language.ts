@@ -3,7 +3,7 @@ export const English = {
     Pages:{
         Translation: {
             title: "Transactions",
-            button: "New Translation"
+            button: "New Transaction"
         },
         Settings:{
             title: "Settings"

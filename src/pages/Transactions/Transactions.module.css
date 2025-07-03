@@ -17,8 +17,9 @@
     justify-content: space-evenly;
     color: white;
     height: 35px;
-    width: 169px;
+    width: 174px;
     margin-right: 19px;
+    padding: 0 5px;
 }
 
 .titleAndButton{
