@@ -56,7 +56,7 @@ function Modal({theme, onPress, language}: props){
                     <main className={styles.main}>
                         <ModalTypeTransaction language={language} onPress={setType} type={type} theme={theme}/>
                         <ModalItem theme={theme} value={amount} onPress={setAmount} title={language.Components.Modal.amount} />
-                        <ModalItemChoose type={type} theme={theme} value={category} onPress={setcategory} title={language.Components.Modal.category} />
+                        <ModalItemChoose language={language} type={type} theme={theme} value={category} onPress={setcategory} title={language.Components.Modal.category} />
                         <ModalItem theme={theme} value={description} onPress={setDescription} title={language.Components.Modal.description} />
                     </main>
                     <footer className={styles.footer}>
